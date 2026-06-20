@@ -1,0 +1,467 @@
+% !TeX program = pdflatex
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{default}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{verbatim}
+
+\title[Conversores A/D]{Conversores Analógico-Digitais (A/D): Técnicas de Construção, Estruturas e Aplicações}
+\subtitle{Seminário de Instrumentação Eletrônica}
+\author[Lucas, Cláudio, Ricardo]{
+    \textbf{Parte 1:} Lucas Souza de Castro \\
+    \textbf{Parte 2:} Claudio Roberto Silveira Eloy Junior \\
+    \textbf{Parte 3:} Ricardo Teixeira dos Santos
+}
+\institute[UFRB]{Universidade Federal do Recôncavo da Bahia \\ Bacharelado em Engenharia Elétrica}
+\date{Cruz das Almas, 2026}
+
+\begin{document}
+
+% ===================== SLIDE 1: CAPA =====================
+\begin{frame}
+    \titlepage
+    \begin{center}
+        \small{Prof. Orientador: (Nome do Professor)}
+    \end{center}
+\end{frame}
+
+% ===================== SLIDE 2: SUMÁRIO GERAL =====================
+\begin{frame}{Sumário}
+    \begin{columns}[T]
+        \begin{column}{0.45\textwidth}
+            \textbf{Parte 1: Fundamentos e Amostragem} \hfill \textcolor{gray}{(Lucas)} \\
+            \vspace{0.3cm}
+            \begin{itemize}
+                \item Introdução e Motivação
+                \item Sinais Analógicos vs. Digitais
+                \item Processo de Conversão: Amostragem
+                \item Teorema de Nyquist
+                \item Aliasing e Filtros Anti-Aliasing
+            \end{itemize}
+            \vspace{0.6cm}
+            \textbf{Parte 2: Arquiteturas Clássicas} \hfill \textcolor{gray}{(Cláudio)} \\
+            \vspace{0.3cm}
+            \begin{itemize}
+                \item Conversor Flash (Paralelo)
+                \item Conversor de Aproximações Sucessivas (SAR)
+                \item Conversor Sigma-Delta ($\Sigma\Delta$)
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.55\textwidth}
+            \textbf{Parte 3: Comparação e Aplicações} \hfill \textcolor{gray}{(Ricardo)} \\
+            \vspace{0.3cm}
+            \begin{itemize}
+                \item Resolução, Velocidade e Precisão
+                \item Comparativo entre Arquiteturas
+                \item Aplicações em Sistemas Embarcados
+                \item Automação Industrial e Instrumentação
+                \item Integração com Sensores e Microcontroladores
+                \item Conclusões Finais
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+% ============================================================
+% ===================== PARTE 1: LUCAS ======================
+% ============================================================
+
+\begin{frame}{Parte 1: Fundamentos da Conversão A/D}
+    \begin{center}
+        \Large{\textbf{Introdução e Processo de Amostragem}} \\
+        \vspace{0.5cm}
+        \textit{Apresentador: Lucas Souza de Castro}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Introdução: O Mundo Analógico e Digital}
+    \begin{block}{Motivação}
+        A maioria dos fenômenos físicos (temperatura, pressão, som, luz) são \textbf{analógicos} (contínuos no tempo e amplitude).
+    \end{block}
+    \begin{block}{Desafio}
+        Sistemas digitais (microcontroladores, DSPs) processam informações como \textbf{dígitos binários} (0 e 1).
+    \end{block}
+    \begin{center}
+        \fcolorbox{blue}{white}{O conversor A/D é a ponte entre o mundo analógico e o digital.}
+    \end{center}
+    \vspace{0.3cm}
+    \begin{figure}
+        \centering
+        % \includegraphics[width=0.6\textwidth]{sinal_analogico_digital.png}
+        \fbox{Figura: Sinal analógico (senoidal) \& Sinal digital (degraus)}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Definições: Sinais Analógicos vs. Digitais}
+    \begin{columns}[c]
+        \begin{column}{0.5\textwidth}
+            \textbf{Analógico}
+            \begin{itemize}
+                \item Contínuo no tempo
+                \item Contínuo em amplitude (valores infinitos)
+                \item Exemplo: tensão de um microfone
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \textbf{Digital}
+            \begin{itemize}
+                \item Discreto no tempo
+                \item Discreto em amplitude (valores finitos)
+                \item Exemplo: arquivo .mp3
+            \end{itemize}
+        \end{column}
+    \end{columns}
+    \vspace{0.3cm}
+    \begin{figure}
+        \centering
+        % \includegraphics[width=0.45\textwidth]{comparacao_analogico_digital.png}
+        \fbox{Figura: Comparação visual}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Processo de Conversão A/D: As 3 Etapas}
+    \begin{enumerate}
+        \item \textbf{Amostragem (Sampling):} Capturar o valor do sinal em instantes discretos de tempo.
+        \item \textbf{Quantização:} Arredondar a amplitude para um nível finito (aproximação).
+        \item \textbf{Codificação:} Representar o nível quantizado em binário (bits).
+    \end{enumerate}
+    \vspace{0.3cm}
+    \begin{figure}
+        \centering
+        % \includegraphics[width=0.7\textwidth]{etapas_conversao.png}
+        \fbox{Figura: Diagrama de blocos do processo de conversão}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Amostragem: O Coração da Conversão}
+    \begin{itemize}
+        \item O sinal é \textbf{amostrado} (lido) em intervalos regulares $T_s$ (período de amostragem).
+        \item $f_s = 1/T_s$ é a \textbf{frequência de amostragem}.
+    \end{itemize}
+    \begin{block}{Teorema de Nyquist-Shannon}
+        Para recuperar o sinal sem perdas, a frequência de amostragem deve ser \textbf{pelo menos o dobro} da maior frequência presente no sinal:
+        \[
+            f_s \ge 2 \cdot f_{max}
+        \]
+        Onde $f_{max}$ é a frequência máxima do sinal (largura de banda).
+    \end{block}
+\end{frame}
+
+\begin{frame}{Aliasing: O Efeito Indesejado}
+    \begin{block}{O que é Aliasing?}
+        Quando $f_s < 2 f_{max}$, ocorre a \textbf{sobreposição espectral}: altas frequências "se disfarçam" de baixas frequências.
+    \end{block}
+    \begin{columns}[c]
+        \begin{column}{0.6\textwidth}
+            \begin{itemize}
+                \item Exemplo: Uma roda de carro parece girar para trás em um filme.
+                \item Em sinais: distorção e perda de informação.
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.4\textwidth}
+            % \includegraphics[width=\textwidth]{aliasing.png}
+            %https://mriquestions.com/aliasing.html
+            \fbox{Figura: Efeito de aliasing}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Filtro Anti-Aliasing}
+    \begin{itemize}
+        \item Para evitar o aliasing, usa-se um \textbf{filtro passa-baixas} antes do conversor A/D.
+        \item O filtro atenua todas as frequências acima de $f_s/2$ (frequência de Nyquist).
+    \end{itemize}
+    \begin{figure}
+        \centering
+        % \includegraphics[width=0.7\textwidth]{filtro_anti_aliasing.png}
+        \fbox{Figura: Posicionamento do filtro anti-aliasing no sistema}
+    \end{figure}
+    \vspace{0.2cm}
+    \begin{alertblock}{Importante}
+        A escolha do filtro é crítica para a qualidade da conversão. Filtros de ordem elevada são comuns.
+    \end{alertblock}
+\end{frame}
+
+\begin{frame}{Resumo da Parte 1}
+    \begin{itemize}
+        \item A conversão A/D é essencial para a interface entre o mundo analógico e sistemas digitais.
+        \item O processo envolve \textbf{amostragem}, \textbf{quantização} e \textbf{codificação}.
+        \item O \textbf{Teorema de Nyquist} garante a recuperação do sinal se $f_s \ge 2 f_{max}$.
+        \item O \textbf{aliasing} é um erro grave que deve ser combatido com \textbf{filtros anti-aliasing}.
+    \end{itemize}
+    \vspace{0.5cm}
+    \begin{center}
+        \textit{"Na próxima parte, conheceremos as arquiteturas que realizam esses passos na prática."}
+    \end{center}
+\end{frame}
+
+% ============================================================
+% ===================== PARTE 2: CLÁUDIO =====================
+% ============================================================
+
+\begin{frame}{Parte 2: Arquiteturas de Conversores A/D}
+    \begin{center}
+        \Large{\textbf{Flash, SAR e Sigma-Delta}} \\
+        \vspace{0.5cm}
+        \textit{Apresentador: Claudio Roberto Silveira Eloy Junior}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Arquitetura Flash (Paralelo)}
+    \begin{block}{Princípio}
+        Utiliza um \textbf{banco de comparadores} ligados em paralelo, cada um com uma referência de tensão diferente (gerada por um divisor resistivo).
+    \end{block}
+    \begin{figure}
+        \centering
+        % \includegraphics[width=0.5\textwidth]{flash_architecture.png}
+        \fbox{Figura: Estrutura básica de um conversor Flash de 3 bits}
+    \end{figure}
+    \begin{columns}[t]
+        \begin{column}{0.5\textwidth}
+            \textbf{Vantagens}
+            \begin{itemize}
+                \item \textcolor{green}{Muito rápido} (operação paralela)
+                \item Latência de 1 ciclo de clock
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \textbf{Desvantagens}
+            \begin{itemize}
+                \item \textcolor{red}{Alto custo} e consumo para alta resolução
+                \item Precisa de $2^n - 1$ comparadores para $n$ bits
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Arquitetura SAR (Aproximações Sucessivas)}
+    \begin{block}{Princípio de Funcionamento}
+        Funciona como uma \textbf{balança digital}. O SAR testa um bit por vez, do MSB ao LSB, ajustando um DAC interno até que a saída do DAC iguale a entrada analógica.
+    \end{block}
+    \begin{figure}
+        \centering
+        % \includegraphics[width=0.6\textwidth]{sar_architecture.png}
+        \fbox{Figura: Diagrama de blocos de um conversor SAR}
+    \end{figure}
+    \begin{columns}[t]
+        \begin{column}{0.5\textwidth}
+            \textbf{Vantagens}
+            \begin{itemize}
+                \item \textcolor{green}{Boa relação custo/velocidade}
+                \item \textcolor{green}{Baixo consumo de energia}
+                \item Resolução típica de 8 a 16 bits
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \textbf{Desvantagens}
+            \begin{itemize}
+                \item \textcolor{red}{Velocidade limitada} (requer $n$ ciclos de clock)
+                \item Sensível a ruídos no comparador
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Arquitetura Sigma-Delta ($\Sigma\Delta$)}
+    \begin{block}{Princípio de Funcionamento}
+        Utiliza \textbf{modulação sigma-delta} (sobreamostragem e moldagem de ruído) para alcançar altíssima resolução.
+    \end{block}
+    \begin{figure}
+        \centering
+        % \includegraphics[width=0.6\textwidth]{sigma_delta_block.png}
+        \fbox{Figura: Estrutura básica de um modulador Sigma-Delta de 1ª ordem}
+    \end{figure}
+    \begin{columns}[t]
+        \begin{column}{0.5\textwidth}
+            \textbf{Vantagens}
+            \begin{itemize}
+                \item \textcolor{green}{Altíssima resolução} (16 a 24 bits)
+                \item \textcolor{green}{Excelente linearidade}
+                \item Baixo custo para alta resolução
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            \textbf{Desvantagens}
+            \begin{itemize}
+                \item \textcolor{red}{Velocidade baixa} (devido à sobreamostragem)
+                \item Latência alta (vários ciclos)
+            \end{itemize}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}{Comparação Visual das Arquiteturas}
+    \begin{table}
+        \centering
+        \begin{tabular}{lccc}
+            \toprule
+            \textbf{Característica} & \textbf{Flash} & \textbf{SAR} & \textbf{$\Sigma\Delta$} \\
+            \midrule
+            Velocidade & \textcolor{green}{Muito Alta} & \textcolor{orange}{Média} & \textcolor{red}{Baixa} \\
+            Resolução & \textcolor{red}{Baixa (8 bits)} & \textcolor{orange}{Média (12-16 bits)} & \textcolor{green}{Alta (16-24 bits)} \\
+            Custo & Alto & Médio & Médio/Baixo \\
+            Consumo & Alto & Baixo & Médio \\
+            Aplicação & Video, Radar & Controle, Áudio & Áudio, Instrumentação \\
+            \bottomrule
+        \end{tabular}
+        \caption{Comparação resumida entre as arquiteturas.}
+    \end{table}
+\end{frame}
+
+\begin{frame}{Resumo da Parte 2}
+    \begin{itemize}
+        \item \textbf{Flash:} Máxima velocidade, baixa resolução, alto custo.
+        \item \textbf{SAR:} Equilíbrio entre velocidade, resolução e custo. Muito utilizado em microcontroladores.
+        \item \textbf{Sigma-Delta:} Máxima resolução, baixa velocidade, ideal para sinais de baixa frequência (áudio, sensores de precisão).
+    \end{itemize}
+    \vspace{0.5cm}
+    \begin{center}
+        \textit{"Na terceira parte, vamos explorar como escolher o conversor certo e onde eles são aplicados."}
+    \end{center}
+\end{frame}
+
+% ============================================================
+% ===================== PARTE 3: RICARDO =====================
+% ============================================================
+
+\begin{frame}{Parte 3: Aplicações e Critérios de Escolha}
+    \begin{center}
+        \Large{\textbf{Características, Comparação e Aplicações Práticas}} \\
+        \vspace{0.5cm}
+        \textit{Apresentador: Ricardo Teixeira dos Santos}
+    \end{center}
+\end{frame}
+
+\begin{frame}{Resolução, Velocidade e Precisão}
+    \begin{block}{Resolução}
+        Número de bits da palavra digital. Um conversor de $n$ bits possui $2^n$ níveis de quantização.
+        \begin{itemize}
+            \item A resolução define o \textbf{menor degrau} que o conversor pode detectar.
+            \item $LSB = V_{ref} / 2^n$ (em Volts).
+        \end{itemize}
+    \end{block}
+    \begin{block}{Velocidade (Taxa de Amostragem)}
+        Frequência máxima de amostragem ($f_s$). Determina a largura de banda do sinal que pode ser convertido.
+    \end{block}
+    \begin{block}{Precisão (Erros)}
+        \begin{itemize}
+            \item \textbf{Erro de Offset:} Desvio constante na saída.
+            \item \textbf{Erro de Ganho:} Inclinação da reta de transferência.
+            \item \textbf{Erro de Não-Linearidade (DNL/INL):} Desvio dos degraus ideais.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Critérios de Escolha de um Conversor A/D}
+    \begin{enumerate}
+        \item \textbf{Largura de banda do sinal:} Determina a $f_s$ mínima (Nyquist).
+        \item \textbf{Resolução necessária:} Qual a precisão em volts é necessária?
+        \item \textbf{Orçamento e consumo de energia.}
+        \item \textbf{Interface:} SPI, I2C, Paralela?
+        \item \textbf{Ambiente:} Ruído, temperatura, etc.
+    \end{enumerate}
+    \vspace{0.3cm}
+    \begin{table}
+        \centering
+        \begin{tabular}{p{2.5cm}|p{3.5cm}|p{2.5cm}}
+            \toprule
+            \textbf{Aplicação} & \textbf{Arquitetura Recomendada} & \textbf{Justificativa} \\
+            \midrule
+            Áudio de alta fidelidade & $\Sigma\Delta$ & Alta resolução, baixa velocidade \\
+            Aquisição de dados em laboratório & SAR ou $\Sigma\Delta$ & Equilíbrio entre resolução e velocidade \\
+            Controle de motor & SAR & Velocidade média e boa resolução \\
+            Sistemas de vídeo/radar & Flash & Velocidade extremamente alta \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}{Aplicações em Sistemas Embarcados e Automação}
+    \begin{block}{Sistemas Embarcados}
+        \begin{itemize}
+            \item Microcontroladores (e.g., Arduino, ESP32) possuem conversores A/D integrados (geralmente SAR de 10 ou 12 bits).
+            \item Leitura de sensores analógicos: potenciômetros, LDR, sensores de temperatura (LM35).
+        \end{itemize}
+    \end{block}
+    \begin{block}{Automação Industrial}
+        \begin{itemize}
+            \item CLPs (Controladores Lógicos Programáveis) possuem módulos de entrada analógica.
+            \item Transdutores de pressão, vazão e nível geram sinais de 4-20 mA ou 0-10 V, que são convertidos para o domínio digital.
+            \item Controle de processos (PID) depende de leituras precisas.
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Instrumentação Eletrônica e Sensores}
+    \begin{block}{Instrumentação de Precisão}
+        \begin{itemize}
+            \item Multímetros digitais, osciloscópios, analisadores de espectro.
+            \item Utilizam conversores de alta resolução (SAR ou $\Sigma\Delta$) com filtragem digital.
+        \end{itemize}
+    \end{block}
+    \begin{block}{Interface com Sensores}
+        \begin{figure}
+            \centering
+            % \includegraphics[width=0.6\textwidth]{sensor_adc_mcu.png}
+            \fbox{Figura: Diagrama de um sistema sensor -> ADC -> Microcontrolador}
+        \end{figure}
+        \begin{itemize}
+            \item O conversor A/D é o elemento que \textbf{digitaliza} a informação do sensor para que o microcontrolador possa processá-la.
+            \item Exemplo: Sensor de temperatura (analógico) -> ADC -> Microcontrolador -> Display (digital).
+        \end{itemize}
+    \end{block}
+\end{frame}
+
+\begin{frame}{Exemplo Prático: Leitura de um Sensor}
+    \begin{block}{Sensor de Temperatura LM35}
+        \begin{itemize}
+            \item Tensão de saída de \SI{10}{\milli\volt} por \si{\celsius}.
+            \item Faixa de temperatura: \SI{0}{\celsius} a \SI{100}{\celsius} $\rightarrow$ \SI{0}{V} a \SI{1}{V}.
+        \end{itemize}
+    \end{block}
+    \begin{block}{Conversor A/D (Arduino Uno - 10 bits)}
+        \begin{itemize}
+            \item Vref = \SI{5}{V}.
+            \item Resolução (LSB) = \SI{5}{V} / $2^{10}$ = \SI{4.88}{\milli\volt}.
+            \item Temperatura = (Leitura Digital $\times$ \SI{4.88}{\milli\volt}) / (\SI{10}{\milli\volt}/\si{\celsius}).
+        \end{itemize}
+    \end{block}
+    \begin{alertblock}{Cuidado!}
+        A resolução do conversor deve ser compatível com a precisão desejada. Para o LM35, 10 bits são suficientes, mas para sensores com variação muito pequena, pode ser necessário um conversor de maior resolução ou um amplificador.
+    \end{alertblock}
+\end{frame}
+
+\begin{frame}{Conclusões Finais}
+    \begin{itemize}
+        \item A escolha do conversor A/D é uma decisão de \textbf{engenharia} que envolve um \textit{trade-off} entre velocidade, resolução, custo e consumo.
+        \item \textbf{Flash:} Velocidade extrema, baixa resolução.
+        \item \textbf{SAR:} A escolha mais versátil para a maioria das aplicações embarcadas.
+        \item \textbf{Sigma-Delta:} A escolha para aplicações de alta precisão e baixa frequência.
+        \item A conversão A/D é um pilar fundamental da eletrônica moderna, presente desde um simples termômetro digital até sistemas de comunicação e controle de processos.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Referências Bibliográficas}
+    \begin{thebibliography}{9}
+        \bibitem{sedra} SEDRA, A. S.; SMITH, K. C. \textit{Microelectronic Circuits}. 7. ed. Oxford University Press, 2014.
+        \bibitem{malvino} MALVINO, A. P.; BATES, D. J. \textit{Eletrônica}. 7. ed. McGraw-Hill, 2017.
+        \bibitem{datasheets} Datasheets: Analog Devices, Texas Instruments (ADC0804, ADS1115, etc.).
+        \bibitem{artigo} BAKER, Bonnie. \textit{How to Select the Right ADC for Your Application}. Analog Devices, AN-283.
+    \end{thebibliography}
+\end{frame}
+
+\begin{frame}{}
+    \begin{center}
+        \Huge{\textbf{Obrigado!}}
+        \vspace{1cm}
+        \Large{Dúvidas?}
+    \end{center}
+\end{frame}
+
+\end{document}
