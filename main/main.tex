@@ -33,35 +33,41 @@
 
 % ===================== SLIDE 2: SUMÁRIO GERAL =====================
 \begin{frame}{Sumário}
+    \small % Reduz a fonte para ganhar espaço vertical
     \begin{columns}[T]
-        \begin{column}{0.45\textwidth}
-            \textbf{Parte 1: Fundamentos e Amostragem} \hfill \textcolor{gray}{(Lucas)} \\
-            \vspace{0.3cm}
+        \begin{column}{0.48\textwidth} % Margem de segurança à esquerda
+            \textbf{Parte 1: Fundamentos e Amostragem} \hfill \textcolor{gray}{(Lucas)}
             \begin{itemize}
+                \setlength{\itemsep}{0pt}      % Remove espaços extras entre itens
+                \setlength{\parskip}{0pt}
                 \item Introdução e Motivação
                 \item Sinais Analógicos vs. Digitais
                 \item Processo de Conversão: Amostragem
                 \item Teorema de Nyquist
                 \item Aliasing e Filtros Anti-Aliasing
             \end{itemize}
-            \vspace{0.6cm}
-            \textbf{Parte 2: Arquiteturas Clássicas} \hfill \textcolor{gray}{(Cláudio)} \\
-            \vspace{0.3cm}
+            
+            \vspace{0.1cm} % Espaço mínimo entre as partes
+            \textbf{Parte 2: Arquiteturas Clássicas} \hfill \textcolor{gray}{(Cláudio)}
             \begin{itemize}
+                \setlength{\itemsep}{0pt}
+                \setlength{\parskip}{0pt}
                 \item Conversor Flash (Paralelo)
-                \item Conversor de Aproximações Sucessivas (SAR)
-                \item Conversor Sigma-Delta ($\Sigma\Delta$)
+                \item SAR (Aproximações Sucessivas) % Nome encurtado para caber melhor
+                \item Sigma-Delta ($\Sigma\Delta$)
             \end{itemize}
         \end{column}
-        \begin{column}{0.55\textwidth}
-            \textbf{Parte 3: Comparação e Aplicações} \hfill \textcolor{gray}{(Ricardo)} \\
-            \vspace{0.3cm}
+        
+        \begin{column}{0.48\textwidth} % Margem de segurança à direita
+            \textbf{Parte 3: Comparação e Aplicações} \hfill \textcolor{gray}{(Ricardo)}
             \begin{itemize}
+                \setlength{\itemsep}{0pt}
+                \setlength{\parskip}{0pt}
                 \item Resolução, Velocidade e Precisão
                 \item Comparativo entre Arquiteturas
                 \item Aplicações em Sistemas Embarcados
                 \item Automação Industrial e Instrumentação
-                \item Integração com Sensores e Microcontroladores
+                \item Integração com Sensores e MCUs % Abreviação para ganhar espaço
                 \item Conclusões Finais
             \end{itemize}
         \end{column}
