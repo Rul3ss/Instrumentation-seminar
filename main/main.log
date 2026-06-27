@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.20)  27 JUN 2026 08:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.20)  27 JUN 2026 09:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -821,7 +821,7 @@ Package translations Info: loading dictionary `translations-basic-dictionary' fo
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
 Package pdftex.def Info: figures/ufrb.png  used on input line 64.
-(pdftex.def)             Requested size: 145.67592pt x 68.2809pt.
+(pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [1
 
 {C:/Users/Usuario/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map} <./figures/ufrb.png>]
@@ -840,14 +840,14 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mat
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
 Package pdftex.def Info: figures/ufrb.png  used on input line 106.
-(pdftex.def)             Requested size: 145.67592pt x 68.2809pt.
+(pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [2
 
 ]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
 Package pdftex.def Info: figures/ufrb.png  used on input line 116.
-(pdftex.def)             Requested size: 145.67592pt x 68.2809pt.
+(pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [3
 
 ]
@@ -863,77 +863,77 @@ Overfull \vbox (2.09236pt too high) detected at line 126
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
 Package pdftex.def Info: figures/ufrb.png  used on input line 126.
-(pdftex.def)             Requested size: 145.67592pt x 68.2809pt.
+(pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
 [4
 
  <./figures/fig1.png>]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
 Package pdftex.def Info: figures/ufrb.png  used on input line 153.
-(pdftex.def)             Requested size: 145.67592pt x 68.2809pt.
+(pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [5
 
 ]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
 Package pdftex.def Info: figures/ufrb.png  used on input line 167.
-(pdftex.def)             Requested size: 145.67592pt x 68.2809pt.
+(pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [6
 
 ]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
 Package pdftex.def Info: figures/ufrb.png  used on input line 181.
-(pdftex.def)             Requested size: 145.67592pt x 68.2809pt.
+(pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [7
 
 ]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
 Package pdftex.def Info: figures/ufrb.png  used on input line 200.
-(pdftex.def)             Requested size: 145.67592pt x 68.2809pt.
+(pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [8
 
 ]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
 Package pdftex.def Info: figures/ufrb.png  used on input line 216.
-(pdftex.def)             Requested size: 145.67592pt x 68.2809pt.
+(pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [9
 
 ]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
 Package pdftex.def Info: figures/ufrb.png  used on input line 229.
-(pdftex.def)             Requested size: 145.67592pt x 68.2809pt.
+(pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [10
 
 ]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
 Package pdftex.def Info: figures/ufrb.png  used on input line 241.
-(pdftex.def)             Requested size: 145.67592pt x 68.2809pt.
+(pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [11
 
 ]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
 Package pdftex.def Info: figures/ufrb.png  used on input line 268.
-(pdftex.def)             Requested size: 145.67592pt x 68.2809pt.
+(pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [12
 
 ]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
 Package pdftex.def Info: figures/ufrb.png  used on input line 296.
-(pdftex.def)             Requested size: 145.67592pt x 68.2809pt.
+(pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [13
 
 ]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
 Package pdftex.def Info: figures/ufrb.png  used on input line 324.
-(pdftex.def)             Requested size: 145.67592pt x 68.2809pt.
+(pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [14
 
 ]
@@ -944,28 +944,28 @@ Overfull \hbox (24.17436pt too wide) in paragraph at lines 342--342
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
 Package pdftex.def Info: figures/ufrb.png  used on input line 342.
-(pdftex.def)             Requested size: 145.67592pt x 68.2809pt.
+(pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
 [15
 
 ]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
 Package pdftex.def Info: figures/ufrb.png  used on input line 354.
-(pdftex.def)             Requested size: 145.67592pt x 68.2809pt.
+(pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [16
 
 ]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
 Package pdftex.def Info: figures/ufrb.png  used on input line 366.
-(pdftex.def)             Requested size: 145.67592pt x 68.2809pt.
+(pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [17
 
 ]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
 Package pdftex.def Info: figures/ufrb.png  used on input line 386.
-(pdftex.def)             Requested size: 145.67592pt x 68.2809pt.
+(pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [18
 
 ]
@@ -1010,49 +1010,49 @@ Overfull \vbox (61.80539pt too high) detected at line 410
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
 Package pdftex.def Info: figures/ufrb.png  used on input line 410.
-(pdftex.def)             Requested size: 145.67592pt x 68.2809pt.
+(pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
 [19
 
 ]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
 Package pdftex.def Info: figures/ufrb.png  used on input line 426.
-(pdftex.def)             Requested size: 145.67592pt x 68.2809pt.
+(pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [20
 
 ]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
 Package pdftex.def Info: figures/ufrb.png  used on input line 446.
-(pdftex.def)             Requested size: 145.67592pt x 68.2809pt.
+(pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [21
 
 ]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
 Package pdftex.def Info: figures/ufrb.png  used on input line 465.
-(pdftex.def)             Requested size: 145.67592pt x 68.2809pt.
+(pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [22
 
 ]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
 Package pdftex.def Info: figures/ufrb.png  used on input line 475.
-(pdftex.def)             Requested size: 145.67592pt x 68.2809pt.
+(pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [23
 
 ]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
 Package pdftex.def Info: figures/ufrb.png  used on input line 484.
-(pdftex.def)             Requested size: 145.67592pt x 68.2809pt.
+(pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [24
 
  <C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/latex/beamer/beamericonarticle.pdf>]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
 Package pdftex.def Info: figures/ufrb.png  used on input line 492.
-(pdftex.def)             Requested size: 145.67592pt x 68.2809pt.
+(pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [25
 
 ]
@@ -1082,7 +1082,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  128i,15n,123p,420b,1031s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx2488.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0800.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss1095.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsi1440.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsi1095.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1200.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1440.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0600.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1000.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1000.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1095.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1095.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1440.pk><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (25 pages, 530545 bytes).
+Output written on main.pdf (25 pages, 530462 bytes).
 PDF statistics:
  1492 PDF objects out of 1728 (max. 8388607)
  55 named destinations out of 1000 (max. 500000)
