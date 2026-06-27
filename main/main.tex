@@ -46,17 +46,14 @@
         \end{beamercolorbox}
         \vskip1em
         
-        % Universidade (sem box, mas em tamanho maior)
         {\usebeamerfont{institute}\usebeamercolor[fg]{institute}\Large\insertinstitute\par}
         \vskip1.5em
         
-        % Box do AUTOR (discentes) — azul também
         \begin{beamercolorbox}[sep=8pt,center]{author}
             \usebeamerfont{author}\insertauthor\par
         \end{beamercolorbox}
         \vskip1em
         
-        % Orientador (sem box, só texto)
         {\small \textbf{Prof. Orientador:} Nilton Cardoso da Silva\par}
         
     \end{center}
@@ -108,21 +105,26 @@
 % ============================================================
 % ===================== PARTE 1: LUCAS ======================
 % ============================================================
+\begin{frame}{Fundamentos da Conversão A/D}
+    A maioria dos fenômenos físicos (temperatura, pressão, som, luz) são analógicos (contínuos no tempo e amplitude).
+    Sistemas digitais (microcontroladores, DSPs) processam informações como dígitos binários (0 e 1).
 
-\begin{frame}{Parte 1: Fundamentos da Conversão A/D}
-    \begin{center}
-        \Large{\textbf{Introdução e Processo de Amostragem}} \\
-    \end{center}
-\end{frame}
+    \begin{columns}[onlytextwidth] 
+        \begin{column}{0.48\textwidth} % Coluna da esquerda
+            \centering
+            \includegraphics[width=\linewidth]{figures/vinil.png}
+            \smallskip
+            {\small \textbf{Figura 1:} Sulcos do disco de vinil}
+        \end{column}
+        \hfill 
+        \begin{column}{0.48\textwidth} % Coluna da direita
+            \centering
+            \includegraphics[width=\linewidth]{figures/cd.png}
+            \smallskip
+            {\small \textbf{Figura 2:} pits  de um CD}
+        \end{column}
+    \end{columns}
 
-\begin{frame}{Introdução: O Mundo Analógico e Digital}
-        A maioria dos fenômenos físicos (temperatura, pressão, som, luz) são \textbf{analógicos} (contínuos no tempo e amplitude).
-        Sistemas digitais (microcontroladores, DSPs) processam informações como \textbf{dígitos binários} (0 e 1).
-    \begin{figure}
-        \centering
-        \includegraphics[width=0.4\linewidth]{figures/fig1.png}
-        \caption{Sinal analógico (senoidal) e Sinal digital (degraus)}
-    \end{figure}
 \end{frame}
 
 \begin{frame}{Definições: Sinais Analógicos vs. Digitais}
@@ -130,26 +132,27 @@
         \begin{column}{0.5\textwidth}
             \textbf{Analógico}
             \begin{itemize}
-                \item Contínuo no tempo
-                \item Contínuo em amplitude (valores infinitos)
-                \item Exemplo: tensão de um microfone
+                \item Contínuo no tempo % valores infinitos entre dois pontos
+                \item Contínuo em amplitude
+                \item Resolução infinita % Teoricamente, não perde detalhes (como a nuance mais sutil de um violino)
             \end{itemize}
         \end{column}
         \begin{column}{0.5\textwidth}
             \textbf{Digital}
             \begin{itemize}
                 \item Discreto no tempo
-                \item Discreto em amplitude (valores finitos)
-                \item Exemplo: arquivo .mp3
+                \item Discreto em amplitude
+                \item Resolução finita %definida pela taxa de amostragem e profundidade de bits
             \end{itemize}
         \end{column}
     \end{columns}
     \vspace{0.3cm}
     \begin{figure}
-        \centering
-        % \includegraphics[width=0.45\textwidth]{comparacao_analogico_digital.png}
-        \fbox{Figura: Comparação visual}
-    \end{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{figures/fig1.png}
+    \par
+    {\small \textbf{Figura 3:} Sinal analógico e Sinal digital}
+\end{figure}
 \end{frame}
 
 \begin{frame}{Processo de Conversão A/D: As 3 Etapas}
