@@ -249,9 +249,12 @@
     \end{block}
     \begin{figure}
         \centering
-        % \includegraphics[width=0.5\textwidth]{flash_architecture.png}
-        \fbox{Figura: Estrutura básica de um conversor Flash de 3 bits}
+        \includegraphics[width=0.5\textwidth]{figures/conv-3bits.png}
+        \fbox{\small Figura: Estrutura básica de um conversor Flash de 3 bits}
     \end{figure}
+\end{frame}
+
+\begin{frame}{Arquiteteura Flash: Vantagens e Desvantagens}
     \begin{columns}[t]
         \begin{column}{0.5\textwidth}
             \textbf{Vantagens}
@@ -276,9 +279,12 @@
     \end{block}
     \begin{figure}
         \centering
-        % \includegraphics[width=0.6\textwidth]{sar_architecture.png}
-        \fbox{Figura: Diagrama de blocos de um conversor SAR}
+         \includegraphics[width=0.5\textwidth]{figures/Diagrama_SAR.png}
+        \fbox{\small Figura: Diagrama de blocos de um conversor SAR}
     \end{figure}
+\end{frame}
+
+\begin{frame}{Arquitetura SAR: Vantagens e Desvantagens}
     \begin{columns}[t]
         \begin{column}{0.5\textwidth}
             \textbf{Vantagens}
@@ -304,23 +310,23 @@
     \end{block}
     \begin{figure}
         \centering
-        % \includegraphics[width=0.6\textwidth]{sigma_delta_block.png}
-        \fbox{Figura: Estrutura básica de um modulador Sigma-Delta de 1ª ordem}
+        \includegraphics[width=0.6\textwidth]{figures/delta-sigma.png}
+        \fbox{\tiny Figura: Estrutura básica de um modulador Sigma-Delta de 1ª ordem}
     \end{figure}
     \begin{columns}[t]
         \begin{column}{0.5\textwidth}
-            \textbf{Vantagens}
+            \textbf{\small Vantagens}
             \begin{itemize}
-                \item \textcolor{green}{Altíssima resolução} (16 a 24 bits)
-                \item \textcolor{green}{Excelente linearidade}
-                \item Baixo custo para alta resolução
+                \item \textcolor{green}{\footnotesize Altíssima resolução} (16 a 24 bits){}
+                \item \textcolor{green}{\footnotesize Excelente linearidade}
+                \item {\footnotesize Baixo custo para alta resolução}
             \end{itemize}
         \end{column}
         \begin{column}{0.5\textwidth}
-            \textbf{Desvantagens}
+            \textbf{\small Desvantagens}
             \begin{itemize}
-                \item \textcolor{red}{Velocidade baixa} (devido à sobreamostragem)
-                \item Latência alta (vários ciclos)
+                \item \textcolor{red}{\footnotesize Velocidade baixa} (devido à sobreamostragem)
+                \item \textcolor{red}{\footnotesize Latência alta} (vários ciclos)
             \end{itemize}
         \end{column}
     \end{columns}
@@ -329,15 +335,17 @@
 \begin{frame}{Comparação Visual das Arquiteturas}
     \begin{table}
         \centering
+        \footnotesize % Diminui a fonte para caber
+        \setlength{\tabcolsep}{4pt} % Estreita o espaço entre colunas
         \begin{tabular}{lccc}
             \toprule
             \textbf{Característica} & \textbf{Flash} & \textbf{SAR} & \textbf{$\Sigma\Delta$} \\
             \midrule
-            Velocidade & \textcolor{green}{Muito Alta} & \textcolor{orange}{Média} & \textcolor{red}{Baixa} \\
-            Resolução & \textcolor{red}{Baixa (8 bits)} & \textcolor{orange}{Média (12-16 bits)} & \textcolor{green}{Alta (16-24 bits)} \\
+            Velocidade & \textcolor{blue}{Muito Alta} & \textcolor{orange}{Média} & \textcolor{red}{Baixa} \\
+            Resolução & \textcolor{red}{Baixa (8 bits)} & \textcolor{orange}{Média (12-16 bits)} & \textcolor{blue}{Alta (16-24 bits)} \\
             Custo & Alto & Médio & Médio/Baixo \\
             Consumo & Alto & Baixo & Médio \\
-            Aplicação & Video, Radar & Controle, Áudio & Áudio, Instrumentação \\
+            Aplicação & Vídeo, Radar & Controle, Áudio & Áudio, Instrumentação \\
             \bottomrule
         \end{tabular}
         \caption{Comparação resumida entre as arquiteturas.}
