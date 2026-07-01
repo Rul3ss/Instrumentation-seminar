@@ -64,7 +64,7 @@
     \small % Reduz a fonte para ganhar espaço vertical
     \begin{columns}[T]
         \begin{column}{0.48\textwidth} % Margem de segurança à esquerda
-            \textbf{Parte 1: Fundamentos e Amostragem} \hfill \textcolor{gray}{(Lucas)}
+            \textbf{Parte 1: Fundamentos e Amostragem} \hfill \textcolor{gray}{}
             \begin{itemize}
                 \setlength{\itemsep}{0pt}      % Remove espaços extras entre itens
                 \setlength{\parskip}{0pt}
@@ -76,7 +76,7 @@
             \end{itemize}
             
             \vspace{0.1cm} % Espaço mínimo entre as partes
-            \textbf{Parte 2: Arquiteturas Clássicas} \hfill \textcolor{gray}{(Cláudio)}
+            \textbf{Parte 2: Arquiteturas Clássicas} \hfill \textcolor{gray}{}
             \begin{itemize}
                 \setlength{\itemsep}{0pt}
                 \setlength{\parskip}{0pt}
@@ -87,7 +87,7 @@
         \end{column}
         
         \begin{column}{0.48\textwidth} % Margem de segurança à direita
-            \textbf{Parte 3: Comparação e Aplicações} \hfill \textcolor{gray}{(Ricardo)}
+            \textbf{Parte 3: Comparação e Aplicações} \hfill \textcolor{gray}{}
             \begin{itemize}
                 \setlength{\itemsep}{0pt}
                 \setlength{\parskip}{0pt}
@@ -202,26 +202,11 @@
     \end{itemize}
     \begin{figure}
         \centering
-        % \includegraphics[width=0.7\textwidth]{filtro_anti_aliasing.png}
-        \fbox{Figura: Posicionamento do filtro anti-aliasing no sistema}
+        \includegraphics[width=0.7\textwidth]{figures/powpass.png}
+        \par
+        {\small \textbf{Figura 6:} diagrama de blocos com filtro pb}
     \end{figure}
     \vspace{0.2cm}
-    \begin{alertblock}{Importante}
-        A escolha do filtro é crítica para a qualidade da conversão. Filtros de ordem elevada são comuns.
-    \end{alertblock}
-\end{frame}
-
-\begin{frame}{Resumo da Parte 1}
-    \begin{itemize}
-        \item A conversão A/D é essencial para a interface entre o mundo analógico e sistemas digitais.
-        \item O processo envolve \textbf{amostragem}, \textbf{quantização} e \textbf{codificação}.
-        \item O \textbf{Teorema de Nyquist} garante a recuperação do sinal se $f_s \ge 2 f_{max}$.
-        \item O \textbf{aliasing} é um erro grave que deve ser combatido com \textbf{filtros anti-aliasing}.
-    \end{itemize}
-    \vspace{0.5cm}
-    \begin{center}
-        \textit{"Na próxima parte, conheceremos as arquiteturas que realizam esses passos na prática."}
-    \end{center}
 \end{frame}
 
 % ============================================================

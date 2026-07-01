@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.27)  1 JUL 2026 07:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.27)  1 JUL 2026 08:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -908,194 +908,192 @@ Package pdftex.def Info: figures/ufrb.png  used on input line 196.
  [7
 
  <./figures/video.png>]
+<figures/powpass.png, id=271, 657.2053pt x 274.77657pt>
+File: figures/powpass.png Graphic file (type png)
+<use figures/powpass.png>
+Package pdftex.def Info: figures/powpass.png  used on input line 210.
+(pdftex.def)             Requested size: 239.60567pt x 100.1773pt.
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 212.
+Package pdftex.def Info: figures/ufrb.png  used on input line 210.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [8
 
-]
+ <./figures/powpass.png>]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 225.
+Package pdftex.def Info: figures/ufrb.png  used on input line 222.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [9
 
 ]
-File: figures/ufrb.png Graphic file (type png)
-<use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 237.
-(pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
- [10
-
-]
-<figures/conv-3bits.png, id=381, 430.60875pt x 377.15906pt>
+<figures/conv-3bits.png, id=341, 430.60875pt x 377.15906pt>
 File: figures/conv-3bits.png Graphic file (type png)
 <use figures/conv-3bits.png>
-Package pdftex.def Info: figures/conv-3bits.png  used on input line 248.
+Package pdftex.def Info: figures/conv-3bits.png  used on input line 233.
 (pdftex.def)             Requested size: 171.14764pt x 149.90562pt.
 
-Overfull \vbox (5.10791pt too high) detected at line 248
+Overfull \vbox (5.10791pt too high) detected at line 233
  []
 
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 248.
+Package pdftex.def Info: figures/ufrb.png  used on input line 233.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
-[11
+[10
 
  <./figures/conv-3bits.png>]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 267.
+Package pdftex.def Info: figures/ufrb.png  used on input line 252.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
- [12
+ [11
 
 ]
-<figures/Diagrama_SAR.png, id=449, 399.74344pt x 280.79906pt>
+<figures/Diagrama_SAR.png, id=409, 399.74344pt x 280.79906pt>
 File: figures/Diagrama_SAR.png Graphic file (type png)
 <use figures/Diagrama_SAR.png>
-Package pdftex.def Info: figures/Diagrama_SAR.png  used on input line 278.
+Package pdftex.def Info: figures/Diagrama_SAR.png  used on input line 263.
 (pdftex.def)             Requested size: 171.14764pt x 120.2228pt.
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 278.
+Package pdftex.def Info: figures/ufrb.png  used on input line 263.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
- [13
+ [12
 
  <./figures/Diagrama_SAR.png>]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 298.
+Package pdftex.def Info: figures/ufrb.png  used on input line 283.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
- [14
+ [13
 
 ]
-<figures/delta-sigma.png, id=518, 2055.68pt x 716.6775pt>
+<figures/delta-sigma.png, id=478, 2055.68pt x 716.6775pt>
 File: figures/delta-sigma.png Graphic file (type png)
 <use figures/delta-sigma.png>
-Package pdftex.def Info: figures/delta-sigma.png  used on input line 326.
+Package pdftex.def Info: figures/delta-sigma.png  used on input line 311.
 (pdftex.def)             Requested size: 205.37926pt x 71.5954pt.
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 326.
+Package pdftex.def Info: figures/ufrb.png  used on input line 311.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
- [15
+ [14
 
  <./figures/delta-sigma.png>]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 346.
+Package pdftex.def Info: figures/ufrb.png  used on input line 331.
+(pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
+ [15
+
+]
+File: figures/ufrb.png Graphic file (type png)
+<use figures/ufrb.png>
+Package pdftex.def Info: figures/ufrb.png  used on input line 343.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [16
 
 ]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 358.
+Package pdftex.def Info: figures/ufrb.png  used on input line 355.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [17
 
 ]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 370.
+Package pdftex.def Info: figures/ufrb.png  used on input line 375.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [18
 
 ]
-File: figures/ufrb.png Graphic file (type png)
-<use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 390.
-(pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
- [19
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 414--414
+Underfull \hbox (badness 10000) in paragraph at lines 399--399
 []|\T1/cmss/bx/n/10.95 Arquitetura Re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 414--414
+Underfull \hbox (badness 10000) in paragraph at lines 399--399
 \T1/cmss/m/n/10.95 baixa ve-loci-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 414--414
+Underfull \hbox (badness 10000) in paragraph at lines 399--399
 []|\T1/cmss/m/n/10.95 Aquisição de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 414--414
+Underfull \hbox (badness 10000) in paragraph at lines 399--399
 []|\T1/cmss/m/n/10.95 Controle de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 414--414
+Underfull \hbox (badness 10000) in paragraph at lines 399--399
 []|\T1/cmss/m/n/10.95 Sistemas de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 414--414
+Underfull \hbox (badness 10000) in paragraph at lines 399--399
 []|\T1/cmss/m/n/10.95 Velocidade
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 414--414
+Underfull \hbox (badness 10000) in paragraph at lines 399--399
 \T1/cmss/m/n/10.95 ex-trema-mente
  []
 
 
-Overfull \vbox (61.80539pt too high) detected at line 414
+Overfull \vbox (61.80539pt too high) detected at line 399
  []
 
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 414.
+Package pdftex.def Info: figures/ufrb.png  used on input line 399.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
-[20
+[19
 
 ]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 430.
+Package pdftex.def Info: figures/ufrb.png  used on input line 415.
+(pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
+ [20
+
+]
+File: figures/ufrb.png Graphic file (type png)
+<use figures/ufrb.png>
+Package pdftex.def Info: figures/ufrb.png  used on input line 435.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [21
 
 ]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 450.
+Package pdftex.def Info: figures/ufrb.png  used on input line 454.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [22
 
 ]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 469.
+Package pdftex.def Info: figures/ufrb.png  used on input line 464.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [23
 
 ]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 479.
+Package pdftex.def Info: figures/ufrb.png  used on input line 473.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [24
-
-]
-File: figures/ufrb.png Graphic file (type png)
-<use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 488.
-(pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
- [25
 
  <C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/latex/beamer/beamericonarticle.pdf>]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 496.
+Package pdftex.def Info: figures/ufrb.png  used on input line 481.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
- [26
+ [25
 
 ]
 \tf@nav=\write6
@@ -1116,17 +1114,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 29720 strings out of 467509
- 644249 string characters out of 5407808
- 980635 words of memory out of 5000000
- 58360 multiletter control sequences out of 15000+600000
+ 29715 strings out of 467509
+ 644088 string characters out of 5407808
+ 980601 words of memory out of 5000000
+ 58357 multiletter control sequences out of 15000+600000
  655873 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,15n,123p,444b,1031s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx2488.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0800.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx0900.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0900.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss0600.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsi1440.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1440.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsi1095.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1200.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0600.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1000.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1000.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1095.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1095.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1440.pk><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (26 pages, 2335300 bytes).
+ <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx2488.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0800.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsi1095.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx0900.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0900.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss0600.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsi1440.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1440.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1200.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0600.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1000.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1000.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1095.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1095.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1440.pk><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on main.pdf (25 pages, 2484941 bytes).
 PDF statistics:
- 1615 PDF objects out of 1728 (max. 8388607)
- 57 named destinations out of 1000 (max. 500000)
- 724 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1572 PDF objects out of 1728 (max. 8388607)
+ 55 named destinations out of 1000 (max. 500000)
+ 693 words of extra memory for PDF output out of 10000 (max. 10000000)
 
