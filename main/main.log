@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.27)  29 JUN 2026 00:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.27)  1 JUL 2026 07:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/Usuario/Instrumentation-seminar/Instrumentation-seminar/main/main.tex
-(c:/Users/Usuario/Instrumentation-seminar/Instrumentation-seminar/main/main.tex
+**d:/repository/novo/Instrumentation-seminar/main/main.tex
+(d:/repository/novo/Instrumentation-seminar/main/main.tex
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-05-26>
 (C:\Users\Usuario\AppData\Local\Programs\MiKTeX\tex/latex/beamer\beamer.cls
@@ -873,213 +873,227 @@ Package pdftex.def Info: figures/ufrb.png  used on input line 156.
  [4
 
  <./figures/fig1.png>]
-File: figures/ufrb.png Graphic file (type png)
-<use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 170.
-(pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
- [5
+<figures/sample.png, id=154, 654.19406pt x 347.79938pt>
+File: figures/sample.png Graphic file (type png)
+<use figures/sample.png>
+Package pdftex.def Info: figures/sample.png  used on input line 171.
+(pdftex.def)             Requested size: 239.60567pt x 127.38353pt.
 
-]
+Overfull \vbox (2.4364pt too high) detected at line 171
+ []
+
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 184.
+Package pdftex.def Info: figures/ufrb.png  used on input line 171.
+(pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
+[5
+
+ <./figures/sample.png>]
+File: figures/ufrb.png Graphic file (type png)
+<use figures/ufrb.png>
+Package pdftex.def Info: figures/ufrb.png  used on input line 185.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [6
 
 ]
+<figures/video.png, id=241, 770.88pt x 681.29532pt>
+File: figures/video.png Graphic file (type png)
+<use figures/video.png>
+Package pdftex.def Info: figures/video.png  used on input line 196.
+(pdftex.def)             Requested size: 136.91603pt x 120.99573pt.
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 203.
+Package pdftex.def Info: figures/ufrb.png  used on input line 196.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [7
 
-]
+ <./figures/video.png>]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 219.
+Package pdftex.def Info: figures/ufrb.png  used on input line 212.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [8
 
 ]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 232.
+Package pdftex.def Info: figures/ufrb.png  used on input line 225.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [9
 
 ]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 244.
+Package pdftex.def Info: figures/ufrb.png  used on input line 237.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [10
 
 ]
-<figures/conv-3bits.png, id=377, 430.60875pt x 377.15906pt>
+<figures/conv-3bits.png, id=381, 430.60875pt x 377.15906pt>
 File: figures/conv-3bits.png Graphic file (type png)
 <use figures/conv-3bits.png>
-Package pdftex.def Info: figures/conv-3bits.png  used on input line 255.
+Package pdftex.def Info: figures/conv-3bits.png  used on input line 248.
 (pdftex.def)             Requested size: 171.14764pt x 149.90562pt.
 
-Overfull \vbox (5.10791pt too high) detected at line 255
+Overfull \vbox (5.10791pt too high) detected at line 248
  []
 
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 255.
+Package pdftex.def Info: figures/ufrb.png  used on input line 248.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
 [11
 
  <./figures/conv-3bits.png>]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 274.
+Package pdftex.def Info: figures/ufrb.png  used on input line 267.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [12
 
 ]
-<figures/Diagrama_SAR.png, id=445, 399.74344pt x 280.79906pt>
+<figures/Diagrama_SAR.png, id=449, 399.74344pt x 280.79906pt>
 File: figures/Diagrama_SAR.png Graphic file (type png)
 <use figures/Diagrama_SAR.png>
-Package pdftex.def Info: figures/Diagrama_SAR.png  used on input line 285.
+Package pdftex.def Info: figures/Diagrama_SAR.png  used on input line 278.
 (pdftex.def)             Requested size: 171.14764pt x 120.2228pt.
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 285.
+Package pdftex.def Info: figures/ufrb.png  used on input line 278.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [13
 
  <./figures/Diagrama_SAR.png>]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 305.
+Package pdftex.def Info: figures/ufrb.png  used on input line 298.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [14
 
 ]
-<figures/delta-sigma.png, id=514, 2055.68pt x 716.6775pt>
+<figures/delta-sigma.png, id=518, 2055.68pt x 716.6775pt>
 File: figures/delta-sigma.png Graphic file (type png)
 <use figures/delta-sigma.png>
-Package pdftex.def Info: figures/delta-sigma.png  used on input line 333.
+Package pdftex.def Info: figures/delta-sigma.png  used on input line 326.
 (pdftex.def)             Requested size: 205.37926pt x 71.5954pt.
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 333.
+Package pdftex.def Info: figures/ufrb.png  used on input line 326.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [15
 
  <./figures/delta-sigma.png>]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 353.
+Package pdftex.def Info: figures/ufrb.png  used on input line 346.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [16
 
 ]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 365.
+Package pdftex.def Info: figures/ufrb.png  used on input line 358.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [17
 
 ]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 377.
+Package pdftex.def Info: figures/ufrb.png  used on input line 370.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [18
 
 ]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 397.
+Package pdftex.def Info: figures/ufrb.png  used on input line 390.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [19
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 421--421
+Underfull \hbox (badness 10000) in paragraph at lines 414--414
 []|\T1/cmss/bx/n/10.95 Arquitetura Re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--421
+Underfull \hbox (badness 10000) in paragraph at lines 414--414
 \T1/cmss/m/n/10.95 baixa ve-loci-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--421
+Underfull \hbox (badness 10000) in paragraph at lines 414--414
 []|\T1/cmss/m/n/10.95 Aquisição de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--421
+Underfull \hbox (badness 10000) in paragraph at lines 414--414
 []|\T1/cmss/m/n/10.95 Controle de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--421
+Underfull \hbox (badness 10000) in paragraph at lines 414--414
 []|\T1/cmss/m/n/10.95 Sistemas de
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--421
+Underfull \hbox (badness 10000) in paragraph at lines 414--414
 []|\T1/cmss/m/n/10.95 Velocidade
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 421--421
+Underfull \hbox (badness 10000) in paragraph at lines 414--414
 \T1/cmss/m/n/10.95 ex-trema-mente
  []
 
 
-Overfull \vbox (61.80539pt too high) detected at line 421
+Overfull \vbox (61.80539pt too high) detected at line 414
  []
 
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 421.
+Package pdftex.def Info: figures/ufrb.png  used on input line 414.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
 [20
 
 ]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 437.
+Package pdftex.def Info: figures/ufrb.png  used on input line 430.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [21
 
 ]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 457.
+Package pdftex.def Info: figures/ufrb.png  used on input line 450.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [22
 
 ]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 476.
+Package pdftex.def Info: figures/ufrb.png  used on input line 469.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [23
 
 ]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 486.
+Package pdftex.def Info: figures/ufrb.png  used on input line 479.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [24
 
 ]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 495.
+Package pdftex.def Info: figures/ufrb.png  used on input line 488.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [25
 
  <C:/Users/Usuario/AppData/Local/Programs/MiKTeX/tex/latex/beamer/beamericonarticle.pdf>]
 File: figures/ufrb.png Graphic file (type png)
 <use figures/ufrb.png>
-Package pdftex.def Info: figures/ufrb.png  used on input line 503.
+Package pdftex.def Info: figures/ufrb.png  used on input line 496.
 (pdftex.def)             Requested size: 109.2597pt x 51.20894pt.
  [26
 
@@ -1102,17 +1116,17 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 29706 strings out of 467509
- 644128 string characters out of 5407808
- 980634 words of memory out of 5000000
- 58346 multiletter control sequences out of 15000+600000
+ 29720 strings out of 467509
+ 644249 string characters out of 5407808
+ 980635 words of memory out of 5000000
+ 58360 multiletter control sequences out of 15000+600000
  655873 words of font info for 109 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,15n,123p,466b,1031s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,15n,123p,444b,1031s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx2488.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0800.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx0900.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0900.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss0600.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsi1440.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1440.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsi1095.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1200.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0600.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1000.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1000.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1095.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1095.pk> <C:\Users\Usuario\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1440.pk><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss12.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Usuario/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on main.pdf (26 pages, 795551 bytes).
+Output written on main.pdf (26 pages, 2335300 bytes).
 PDF statistics:
- 1605 PDF objects out of 1728 (max. 8388607)
+ 1615 PDF objects out of 1728 (max. 8388607)
  57 named destinations out of 1000 (max. 500000)
- 714 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 724 words of extra memory for PDF output out of 10000 (max. 10000000)
 
