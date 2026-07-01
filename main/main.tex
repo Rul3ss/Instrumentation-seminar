@@ -348,109 +348,205 @@
 
 \begin{frame}{Parte 3: Aplicações e Critérios de Escolha}
     \begin{center}
-        \Large{\textbf{Características, Comparação e Aplicações Práticas}} \\
+        \Large{\textbf{Comparação e Aplicações}} \\
         \vspace{0.5cm}
         \textit{Apresentador: Ricardo Teixeira dos Santos}
     \end{center}
 \end{frame}
 
 \begin{frame}{Resolução, Velocidade e Precisão}
-    \begin{block}{Resolução}
-        Número de bits da palavra digital. Um conversor de $n$ bits possui $2^n$ níveis de quantização.
-        \begin{itemize}
-            \item A resolução define o \textbf{menor degrau} que o conversor pode detectar.
-            \item $LSB = V_{ref} / 2^n$ (em Volts).
-        \end{itemize}
-    \end{block}
-    \begin{block}{Velocidade (Taxa de Amostragem)}
-        Frequência máxima de amostragem ($f_s$). Determina a largura de banda do sinal que pode ser convertido.
-    \end{block}
-    \begin{block}{Precisão (Erros)}
-        \begin{itemize}
-            \item \textbf{Erro de Offset:} Desvio constante na saída.
-            \item \textbf{Erro de Ganho:} Inclinação da reta de transferência.
-            \item \textbf{Erro de Não-Linearidade (DNL/INL):} Desvio dos degraus ideais.
-        \end{itemize}
-    \end{block}
+	
+	\begin{block}{Resolução}
+		\begin{itemize}
+			\item Define o menor incremento de tensão detectável (LSB).
+			\item Um ADC de $n$ bits possui $2^n$ níveis de quantização.
+			\item Quanto maior a resolução, menor o erro de quantização.
+		\end{itemize}
+		\[
+		LSB=\frac{V_{ref}}{2^n}
+		\]
+	\end{block}
+	
+	\begin{block}{Velocidade}
+		\begin{itemize}
+			\item Determinada pela taxa de amostragem ($f_s$).
+			\item Quanto maior a velocidade, maior a largura de banda do sinal.
+		\end{itemize}
+	\end{block}
+	
+	\begin{block}{Precisão}
+		\small
+		
+		Depende da resolução e dos erros do conversor.
+		
+		\begin{columns}[T]
+			\column{0.48\textwidth}
+			\begin{itemize}
+				\item Offset
+				\item Ganho
+			\end{itemize}
+			
+			\column{0.48\textwidth}
+			\begin{itemize}
+				\item INL
+				\item DNL
+			\end{itemize}
+		\end{columns}
+		
+	\end{block}
 \end{frame}
 
-\begin{frame}{Critérios de Escolha de um Conversor A/D}
-    \begin{enumerate}
-        \item \textbf{Largura de banda do sinal:} Determina a $f_s$ mínima (Nyquist).
-        \item \textbf{Resolução necessária:} Qual a precisão em volts é necessária?
-        \item \textbf{Orçamento e consumo de energia.}
-        \item \textbf{Interface:} SPI, I2C, Paralela?
-        \item \textbf{Ambiente:} Ruído, temperatura, etc.
-    \end{enumerate}
-    \vspace{0.3cm}
-    \begin{table}
-        \centering
-        \begin{tabular}{p{2.5cm}|p{3.5cm}|p{2.5cm}}
-            \toprule
-            \textbf{Aplicação} & \textbf{Arquitetura Recomendada} & \textbf{Justificativa} \\
-            \midrule
-            Áudio de alta fidelidade & $\Sigma\Delta$ & Alta resolução, baixa velocidade \\
-            Aquisição de dados em laboratório & SAR ou $\Sigma\Delta$ & Equilíbrio entre resolução e velocidade \\
-            Controle de motor & SAR & Velocidade média e boa resolução \\
-            Sistemas de vídeo/radar & Flash & Velocidade extremamente alta \\
-            \bottomrule
-        \end{tabular}
-    \end{table}
+
+\begin{frame}{Comparativo entre Arquiteturas}
+	
+	\begin{table}
+		\centering
+		\footnotesize
+		\begin{tabular}{lcccc}
+			\toprule
+			\textbf{Arquitetura} & \textbf{Velocidade} & \textbf{Resolução} & \textbf{Consumo} & \textbf{Aplicação} \\
+			\midrule
+			Flash & Muito alta & Baixa & Alto & Radar, Vídeo \\
+			SAR & Média/Alta & Média & Baixo & Sistemas Embarcados \\
+			$\Sigma\Delta$ & Baixa & Muito alta & Médio & Instrumentação, Áudio \\
+			\bottomrule
+		\end{tabular}
+	\end{table}
+	
+	\vspace{0.3cm}
+	
+	\begin{alertblock}{Conclusão}
+		Não existe um ADC melhor, mas sim o mais adequado para cada aplicação.
+	\end{alertblock}
+	
 \end{frame}
 
-\begin{frame}{Aplicações em Sistemas Embarcados e Automação}
-    \begin{block}{Sistemas Embarcados}
-        \begin{itemize}
-            \item Microcontroladores (e.g., Arduino, ESP32) possuem conversores A/D integrados (geralmente SAR de 10 ou 12 bits).
-            \item Leitura de sensores analógicos: potenciômetros, LDR, sensores de temperatura (LM35).
-        \end{itemize}
-    \end{block}
-    \begin{block}{Automação Industrial}
-        \begin{itemize}
-            \item CLPs (Controladores Lógicos Programáveis) possuem módulos de entrada analógica.
-            \item Transdutores de pressão, vazão e nível geram sinais de 4-20 mA ou 0-10 V, que são convertidos para o domínio digital.
-            \item Controle de processos (PID) depende de leituras precisas.
-        \end{itemize}
-    \end{block}
+\begin{frame}{Aplicações em Sistemas Embarcados}
+	
+	\begin{itemize}
+		\item Microcontroladores possuem ADCs integrados, geralmente do tipo SAR.
+		\item Conversão de sinais analógicos provenientes de sensores.
+		\item Monitoramento de bateria e alimentação.
+		\item Controle de motores e robótica.
+		\item Sistemas IoT e automotivos.
+	\end{itemize}
+	
+	\vspace{0.3cm}
+	
+	\begin{block}{Exemplos}
+		\begin{itemize}
+			\item Arduino Uno -- ADC SAR de 10 bits.
+			\item ESP32 -- ADC SAR de 12 bits.
+			\item STM32 -- ADC SAR de 12 ou 16 bits.
+		\end{itemize}
+	\end{block}
+	
 \end{frame}
 
-\begin{frame}{Instrumentação Eletrônica e Sensores}
-    \begin{block}{Instrumentação de Precisão}
-        \begin{itemize}
-            \item Multímetros digitais, osciloscópios, analisadores de espectro.
-            \item Utilizam conversores de alta resolução (SAR ou $\Sigma\Delta$) com filtragem digital.
-        \end{itemize}
-    \end{block}
-    \begin{block}{Interface com Sensores}
-        \begin{figure}
-            \centering
-            % \includegraphics[width=0.6\textwidth]{sensor_adc_mcu.png}
-            \fbox{Figura: Diagrama de um sistema sensor -> ADC -> Microcontrolador}
-        \end{figure}
-        \begin{itemize}
-            \item O conversor A/D é o elemento que \textbf{digitaliza} a informação do sensor para que o microcontrolador possa processá-la.
-            \item Exemplo: Sensor de temperatura (analógico) -> ADC -> Microcontrolador -> Display (digital).
-        \end{itemize}
-    \end{block}
+\begin{frame}{Automação Industrial e Instrumentação}
+	
+	\begin{columns}
+		
+		\column{0.48\textwidth}
+		
+		\textbf{Automação Industrial}
+		
+		\begin{itemize}
+			\item Leitura de sensores industriais.
+			\item Controle PID.
+			\item Monitoramento de processos.
+			\item Entradas analógicas de CLPs.
+			\item Sinais de 0--10 V e 4--20 mA.
+		\end{itemize}
+		
+		\column{0.48\textwidth}
+		
+		\textbf{Instrumentação}
+		
+		\begin{itemize}
+			\item Multímetros digitais.
+			\item Osciloscópios.
+			\item Sistemas DAQ.
+			\item Equipamentos biomédicos.
+			\item Instrumentos de alta precisão.
+		\end{itemize}
+		
+	\end{columns}
+	
+	\vspace{0.3cm}
+	
+	\begin{alertblock}{Importante}
+		Quanto maior a precisão exigida, maior deve ser a resolução do conversor.
+	\end{alertblock}
+	
 \end{frame}
 
-\begin{frame}{Exemplo Prático: Leitura de um Sensor}
-    \begin{block}{Sensor de Temperatura LM35}
-        \begin{itemize}
-            \item Tensão de saída de \SI{10}{\milli\volt} por \si{\celsius}.
-            \item Faixa de temperatura: \SI{0}{\celsius} a \SI{100}{\celsius} $\rightarrow$ \SI{0}{V} a \SI{1}{V}.
-        \end{itemize}
-    \end{block}
-    \begin{block}{Conversor A/D (Arduino Uno - 10 bits)}
-        \begin{itemize}
-            \item Vref = \SI{5}{V}.
-            \item Resolução (LSB) = \SI{5}{V} / $2^{10}$ = \SI{4.88}{\milli\volt}.
-            \item Temperatura = (Leitura Digital $\times$ \SI{4.88}{\milli\volt}) / (\SI{10}{\milli\volt}/\si{\celsius}).
-        \end{itemize}
-    \end{block}
-    \begin{alertblock}{Cuidado!}
-        A resolução do conversor deve ser compatível com a precisão desejada. Para o LM35, 10 bits são suficientes, mas para sensores com variação muito pequena, pode ser necessário um conversor de maior resolução ou um amplificador.
-    \end{alertblock}
+\begin{frame}{Integração com Sensores e Microcontroladores}
+	
+	\begin{center}
+		
+		\Large
+		
+		Sensor
+		
+		$\downarrow$
+		
+		Condicionamento do sinal
+		
+		(Filtro / Amplificador)
+		
+		$\downarrow$
+		
+		Conversor A/D
+		
+		$\downarrow$
+		
+		Microcontrolador
+		
+		$\downarrow$
+		
+		Processamento e Controle
+		
+		$\downarrow$
+		
+		Display / Comunicação / Atuador
+		
+	\end{center}
+	
+	\vspace{0.4cm}
+	
+	\begin{itemize}
+		\item Sensores fornecem sinais analógicos.
+		\item O ADC converte esses sinais para o domínio digital.
+		\item O microcontrolador processa as informações e executa ações.
+	\end{itemize}
+	
+\end{frame}
+
+\begin{frame}{Qual Conversor Escolher?}
+	
+	\begin{table}
+		\centering
+		\begin{tabular}{ll}
+			\toprule
+			\textbf{Prioridade} & \textbf{Arquitetura Recomendada} \\
+			\midrule
+			Máxima velocidade & Flash \\
+			Baixo consumo & SAR \\
+			Alta resolução & $\Sigma\Delta$ \\
+			Sistemas embarcados & SAR \\
+			Instrumentação & $\Sigma\Delta$ \\
+			Vídeo e Radar & Flash \\
+			\bottomrule
+		\end{tabular}
+	\end{table}
+	
+	\vspace{0.5cm}
+	
+	\begin{block}{Mensagem Final}
+		A escolha de um conversor A/D depende do equilíbrio entre velocidade, resolução, consumo de energia e custo da aplicação.
+	\end{block}
+	
 \end{frame}
 
 \begin{frame}{Conclusões Finais}
